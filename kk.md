@@ -29,3 +29,16 @@ esc 키보드 입력
 ```
 $ sudo reboot
 ```
+
+
+도커 설치
+
+amazon-linux-extras enable docker
+amazon-linux-extras install docker -y
+
+도커컴포즈
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
