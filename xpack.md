@@ -1,7 +1,15 @@
+# git 설정
+```
+$ cd ~
+$ rm -rf ~/dash10
+$ git clone https://github.com/no1ysc/dash10
+$ cd dash10
+```
+
 # Elasticsearch
 ## 1. Elasticsearch 내리기 
 ```
-$ sudo docker-compose down elasticsearch
+$ sudo docker-compose rm --stop elasticsearch
 ```
 
 ## 2. 보안기능 활성화
@@ -28,7 +36,7 @@ $ bin/elasticsearch-setup-passwords auto
 # Kibana
 ## 1. Kibana 내리기
 ```
-$ sudo docker-compose down kibana
+$ sudo docker-compose rm --stop elasticsearch
 ```
 
 ## 2. Elasticsearch 접속 계정 설정
