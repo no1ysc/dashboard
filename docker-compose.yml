@@ -7,6 +7,7 @@ services:
     restart: always
     environment:
       - discovery.type=single-node
+      - xpack.security.enabled=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
       memlock:
@@ -25,6 +26,9 @@ services:
     container_name: kibana
     image: docker.elastic.co/kibana/kibana:7.5.1
     restart: always
+    environment:
+      - elasticsearch.username=kibana
+      - elasticsearch.password=password
     ports:
       - 5601:5601
 
