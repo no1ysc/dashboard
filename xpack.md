@@ -36,12 +36,14 @@ $ bin/elasticsearch-setup-passwords auto
 # Kibana
 ## 1. Kibana 내리기
 ```
-$ sudo docker-compose rm --stop elasticsearch
+$ sudo docker-compose rm --stop kibana
 ```
 
 ## 2. Elasticsearch 접속 계정 설정
 ```
-docker-compose.yml 내 environment 셋팅
+# docker-compose.yml 내 environment 셋팅
+$ vim docker-compose.yml
+# kibana password 설정
 ```
 
 ## 3. Kibana 시작
