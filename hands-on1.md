@@ -68,7 +68,7 @@ $ vim file.conf
 ```
 input {
   file {
-    path => "/home/ec2-user/dashboard-8/data/5000_Sales_Records.csv"
+    path => "/home/ec2-user/dash10/data/5000_Sales_Records.csv"
     start_position => "beginning"
     #sincedb_path => "/dev/null" #only for develop
   }
@@ -91,7 +91,7 @@ filter {
 
 output {
   elasticsearch {
-    hosts => ["ec2-13-209-172-77.ap-northeast-2.compute.amazonaws.com:9200"]
+    hosts => ["본인주소입력:9200"]
     index => "myfile"
   }
   #stdout { }  #only for develop
