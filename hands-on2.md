@@ -63,7 +63,7 @@ input {
     jdbc_connection_string => "jdbc:mysql://dashboard-8.cp7ovqbewwso.ap-northeast-2.rds.amazonaws.com:3306/fast"
     jdbc_user => "root"
     jdbc_password => "1q2w3e4r"
-    jdbc_driver_library => "/home/ec2-user/dashboard-8/data/mysql-connector-java-5.1.47.jar"
+    jdbc_driver_library => "/home/ec2-user/dash10/data/mysql-connector-java-5.1.47.jar"
     jdbc_driver_class => "com.mysql.jdbc.Driver"
     statement => "SELECT * FROM titanic"
  }
@@ -71,7 +71,7 @@ input {
 
 output {
   elasticsearch {
-    hosts => ["ec2-13-209-172-77.ap-northeast-2.compute.amazonaws.com:9200"]
+    hosts => ["본인주소입력"]
     index => "myrdbms"
   }
   #stdout { }  #only for develop
