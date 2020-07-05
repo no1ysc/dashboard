@@ -16,8 +16,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 echo "sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose"
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-echo "amazon-linux-extras enable java-openjdk11"
-amazon-linux-extras enable java-openjdk11
-
-echo "amazon-linux-extras install java-openjdk11 -y"
-amazon-linux-extras install java-openjdk11 -y
+echo "sudo yum install java-1.8.0-openjdk-devel.x86_64 -y"
+sudo yum install java-1.8.0-openjdk-devel.x86_64 -y
