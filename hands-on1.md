@@ -106,3 +106,6 @@ $ bin/logstash -f file.conf
 ```
 doc['Ship Date'].value.dayOfYear - doc['Order Date'].value.dayOfYear
 ```
+```
+(doc['Ship Date'].value.toEpochSecond() - doc['Order Date'].value.toEpochSecond()) / 60 / 60 / 24
+```
