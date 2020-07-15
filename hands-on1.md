@@ -99,7 +99,7 @@ output {
 ```
 
 ```
-$ bin/logstash -f file.conf
+$ ~/logstash-7.8.0/bin/logstash -f file.conf
 ```
 
 # scripted field
